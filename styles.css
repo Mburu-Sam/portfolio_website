@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #074A68;
+}
+
+header p {
+  color: #F4B915;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #074A68;
+  padding: 10px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #074A68;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #F4B915;
+  color: #000;
+  padding: 10px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #074A68;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #05364c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #27ae60;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  border-radius: 20px 0 0 20px;
+  font-weight: bold;
+}
+/* Animation for progress bars */
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--final-width);
+  }
+}
+
+.language .progress-bar {
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.language .progress {
+  height: 100%;
+  background-color: #27ae60;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  border-radius: 20px 0 0 20px;
+  font-weight: bold;
+
+  /* Animation */
+  animation: fillBar 2s ease-out forwards;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
